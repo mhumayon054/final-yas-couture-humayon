@@ -8,7 +8,7 @@ import { Router } from "@angular/router"
 import { SliderFour } from "../slider-four/slider-four"
 @Component({
   selector: "app-page-one",
-  imports: [MainPage, Silder, Footer, Slidertwo, SliderThree, SliderFour],
+  imports: [MainPage, Silder, Footer, Slidertwo, SliderThree],
   templateUrl: "./page-one.html",
   styleUrls: ["./page-one.scss"],
 })
@@ -197,6 +197,32 @@ export class PageOne {
         'https://res.cloudinary.com/dzit141xn/image/upload/v1758733786/Look_27_kmfmsv.jpg',
     },
   ];
+  imageswinter = [ 'https://res.cloudinary.com/dzit141xn/image/upload/v1758735067/fallwinter5_rmesxj.webp', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733782/fallwinter3_kfb0ee.webp', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733779/fallwinter4_fsdty9.webp', 
+    'assets/newWinterLooksImages/Look 1.1.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733798/Look_2.1_lbvjge.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733809/Look_3.1_f6usaw.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733800/Look_4.1_cyclai.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733818/Look_6.1_trwggm.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733814/Look_7.1_gijgos.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733807/Look_10.2_kvqz2c.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733826/Look_12.2_kcmq9p.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733972/Look_13_o93hcp.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733788/Look_1.2_zhzwe1.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733824/Look_15_mdndyz.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733836/Look_16_yz9nyi.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733838/Look_18_mtnjli.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733776/Look_19_bagho6.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733762/Look_20_mnriki.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733778/Look_21_axtlfh.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733805/Look_22_izqgno.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733860/Look_11.2_komkyy.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733814/Look_23_fxawbc.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733775/Look_24_u3iecq.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733778/Look_25_ypnyy6.jpg', 
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733799/Look_26_s20b8i.jpg', 
+  'https://res.cloudinary.com/dzit141xn/image/upload/v1758733788/Look_27_exa9vm.jpg', ];
   images3 = [
     // 'assets/3C8A1513-scaled-1-1.jpg (1).webp',
     "https://res.cloudinary.com/dzit141xn/image/upload/v1758737702/3C8A1469_rks4js.jpg",

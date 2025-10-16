@@ -4,14 +4,14 @@
     <div class="slides" [style.transform]="calculateTransform()">
       <div class="slide" *ngFor="let img of filteredImages">
         <div class="image-wrapper">
-           Default image 
+          <!-- Default image shown normally -->
           <img
             class="default-img"
             [src]="img.defaultUrl"
             alt="Slide Image"
             (click)="sendValue(img.defaultUrl)"
           />
-           Hover image 
+          <!-- Hover image shown on hover -->
           <img
             class="hover-img"
             [src]="img.hoverUrl"

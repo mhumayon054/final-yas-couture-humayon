@@ -42,7 +42,6 @@ export class Silder {
       extraTransform = ` translateX(${this.dragDeltaX * 0.7}px)`
     }
 
-    // Side slides ko center (-50%) se ±46% shift karein taa ke left/right theek nazar aayen
     const sideShift = 46 // percent
 
     // Center slide
