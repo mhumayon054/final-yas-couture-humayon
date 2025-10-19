@@ -84,7 +84,7 @@ export class Spotlight {
 { name: 'Karen Manco stuns in a Yas Couture dress', img: 'assets/Models/90.jpeg' },
 { name: 'Jennifer Lopez performs at Qatar Airways Gala at the FoxTheater in Atlanta Wearing a Yas Couture Costume', img: 'assets/Models/92.jpeg' },
 { name: 'Carrie Underwood Stuns in a Yas Couture dress for the American Country Countdown Awards', img: 'assets/Models/94.jpeg' },
-{ name: 'The judges: Harry Connick Jr, Jennifer Lopez and Keith Urban entered onstage during the finale', img: 'assets/Models/Harry 95.jpg' },
+{ name: 'The judges: Harry Connick Jr, Jennifer Lopez and Keith Urban entered onstage during the finale', img: 'https://res.cloudinary.com/dzit141xn/image/upload/v1760864063/Harry_95_ohkwrl.jpg' },
 { name: 'Bai Ling wearing a Yas Couture dress as featured on the cover of Gia’s Magazine', img: 'assets/Models/97.jpeg' },
 { name: 'Cynthia Olav Stuns in a Yas Couture dress', img: 'assets/Models/98.jpeg' },
 { name: 'Anahi Giovanna Wearing a Yas Couture look for the Premios Juventud', img: 'assets/Models/99.jpeg' },
