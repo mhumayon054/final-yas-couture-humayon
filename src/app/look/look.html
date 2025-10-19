@@ -1,12 +1,17 @@
 <div class="main">
   <h1 class="main-heading">THE LOOKS</h1>
+
   <div class="containr">
+    <!-- Added hover image functionality with mouseenter/mouseleave events -->
     <div class="product" *ngFor="let product of lookData">
       <img
+        #productImage
         [src]="product.img"
         [alt]="product.name"
+        (mouseenter)="productImage.src = product.img2 || product.img"
+        (mouseleave)="productImage.src = product.img"
         (click)="showLookDetails({
-          allpictures:allPictures,
+          allpictures: allPictures,
           pictures: getImages(product),
           name: product.name,
           text: product.text || ''
