@@ -1,118 +1,120 @@
-.main{
-    width: 100%;
-    height: 100%;
-    // overflow: scroll;
+.main {
+  width: 100%;
+  height: 100%;
 }
+
 .containr {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    justify-content: space-around;
-    padding: 0 20px;
-    box-sizing: border-box;
-    // max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px;
-    padding-top: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  justify-content: space-around;
+  padding: 0 20px;
+  margin: 0 auto;
+  padding: 50px;
+  padding-top: 0;
 }
 
 @media (min-width: 601px) {
-    .containr {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 30px;
-    }
+  .containr {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+  }
 }
 
 .product {
-    position: relative;
-    width: 98%;
-    max-width: none;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    transition: box-shadow 0.3s;
-    margin: 0 auto;
+  position: relative;
+  width: 98%;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin: 0 auto;
 }
 
+/* We’ll simulate two layered images using pseudo-element overlay trick */
 .product img {
-    width: 100%;
-    display: block;
-    transition: transform 0.9s ease;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease-in-out;
 }
 
-/* Scale image on hover */
+/* Hover transition just like slider (fade + scale) */
 .product:hover img {
-    transform: scale(1.1);
+  transform: scale(1.05);
+//   opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease-in-out;
 }
 
-/* Overlay for product name */
-.product-name {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.9s ease;
-    padding: 10px 0;
-    border-radius: 5px;
- 
+/* Smooth fade animation when image src changes */
+.product img.ng-animating {
+  transition: opacity 0.6s ease-in-out;
 }
 
-/* Show product name on hover */
-.product:hover .product-name {
+/* Fade effect trigger (CSS hack to reapply transition every time src changes) */
+.product img {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.2;
+  }
+  to {
     opacity: 1;
-    pointer-events: auto;
-    background-color: transparent;
-    bottom: 20%;
+  }
+}
+
+/* Product name overlay */
+.product-name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.6s ease;
+  padding: 10px 0;
+}
+
+/* Show name on hover */
+.product:hover .product-name {
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 20%;
 }
 
 /* Responsive Styles */
 @media (max-width: 900px) {
-    .heading2 {
-        font-size: 36px;
-        margin: 30px;
-    }
-    .product {
-        width: 100%;
-    }
+  .product {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
-    .heading {
-        font-size: 12px;
-        margin: 10px;
-    }
-    .heading2 {
-        font-size: 22px;
-        margin: 20px 0;
-    }
-    .containr {
-        gap: 16px;
-        padding: 0 4px;
-        grid-template-columns: 1fr;
-    }
-    .product {
-        width: 95vw;
-        max-width: 98vw;
-        min-width: 0;
-        margin: 0 auto;
-    }
-    .product-name {
-        font-size: 18px;
-        font-weight: bold;
-        padding: 6px 0;
-    }
+  .containr {
+    gap: 16px;
+    padding: 0 4px;
+    grid-template-columns: 1fr;
+  }
+  .product {
+    width: 95vw;
+    max-width: 98vw;
+  }
+  .product-name {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 0;
+  }
 }
-.main-heading{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 400;
-    padding: 40px;
+
+.main-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 40px;
 }
