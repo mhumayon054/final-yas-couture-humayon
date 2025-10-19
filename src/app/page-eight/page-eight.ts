@@ -89,70 +89,70 @@ export class PageEight {
       img2: 'assets/looks2/Look-10.2-scaled.jpg.webp',
       text: 'Golden rust gown intricately detailed with sparkling crystals and beads in cascading motifs – highlighting a fitted silhouette, a slit for fluid movement, and ethereal cape sleeves.',
     },
-    // {
-    //   name: 'LOOK 14',
-    //   img: 'assets/looks2/Look-14-scaled.jpg.webp',
-    //   text: 'Regal white gown with gold and turquoise embellishments—featuring a structured bust, cut-out waist, and a beaded, high-slit skirt, completed with a flowing chiffon train and matching jeweled arm cuffs.',
-    // },
-    // {
-    //   name: 'LOOK 15',
-    //   img: 'assets/looks2/Look-15-768x1152.jpg.webp',
-    //   text: 'A stunning silver creation, embroidered with crystals and sequins in an ornamental pattern, complemented by flowing fringe and a high neckline.',
-    // },
-    // {
-    //   name: 'LOOK 16',
-    //   img: 'assets/looks2/Look-16-600x900.jpg.webp',
-    //   text: 'A mesmerizing black gown inspired by the elegance of a black swan, featuring a feather-adorned bodice, a dramatic pleated mermaid skirt, and white gloves that echo timeless grace.',
-    // },
-    // {
-    //   name: 'LOOK 17',
-    //   img: 'assets/looks2/Look-17-600x900.jpg.webp',
-    //   text: 'Blending grace and glamour, this white gown features intricate beaded embroidery along the borders, a daring slit, and a sophisticated hooded accent.',
-    // },
-    // {
-    //   name: 'LOOK 18',
-    //   img: 'assets/looks2/Look-18-600x900.jpg.webp',
-    //   text: 'Flowing chiffon meets artisanal macramé in this captivating plum gown, designed with bold slits and sheer accents for the ultimate statement look.',
-    // },
-    // {
-    //   name: 'LOOK 19',
-    //   img: 'assets/looks2/Look-19-600x900.jpg.webp',
-    //   text: 'Elegant garnet-hued gown embellished with hand-applied sequins and beads, designed with a rushed silhouette and a thigh-high slit, paired with lightweight chiffon sleeve capes.',
-    // },
-    // {
-    //   name: 'LOOK 20',
-    //   img: 'assets/looks2/Look-20-600x900.jpg.webp',
-    //   text: 'Velvet-inspired plum jumpsuit with flowing sheer cape, enhanced by tonal beading and crystal accents',
-    // },
-    // {
-    //   name: 'LOOK 21',
-    //   img: 'assets/looks2/Look-21-600x900.jpg.webp',
-    //   text: 'Purple sheer gown with hand-stitched embellishments in flowing motifs, featuring a high slit and voluminous tulle cape sleeves.',
-    // },
-    // {
-    //   name: 'LOOK 22',
-    //   img: 'assets/looks2/Look-22-1-600x900.jpg.webp',
-    //   text: 'Fitted nude gown adorned with delicate beadwork and shimmering embroidery—paired with a detachable chiffon cape that creates a regal silhouette.',
-    // },
-    // {
-    //   name: 'LOOK 23',
-    //   img: 'assets/looks2/Look-23-1-600x900.jpg.webp',
-    //   text: 'Sheer pearl-embroidered gown with a high neckline and intricate beading throughout, paired with a delicate chiffon cape for an ethereal touch.',
-    // },
-    // {
-    //   name: 'LOOK 24',
-    //   img: 'assets/looks2/Look-24-1-600x900.jpg.webp',
-    //   text: 'Antique-inspired gold gown featuring intricate beadwork, a fitted silhouette, and captivating geometric patterns with bold cutout accents.',
-    // },
-    // {
-    //   name: 'LOOK 25',
-    //   img: 'assets/looks2/Look-25-1-600x900.jpg.webp',
-    //   text: 'With its rich black tulle, radiant crystal embroidery, and fluid cape, this gown is a stunning blend of elegance and daring, complete with a striking slit for added allure.',
-    // },
-    // {
-    //   name: 'LOOK 26',
-    //   img: 'assets/looks2/Look-26-1-600x900.jpg.webp',
-    //   text: 'Sunset-inspired gown in warm orange hues, intricately adorned with shimmering beadwork and crystals in geometric lines. Showcasing a dramatic cape in translucent tulle and a high choker neckline, this ethereal design exudes confidence and sophistication.',
-    // },
+    {
+      name: 'LOOK 14',
+      img: 'assets/looks2/Look-14-scaled.jpg.webp',
+      text: 'Regal white gown with gold and turquoise embellishments—featuring a structured bust, cut-out waist, and a beaded, high-slit skirt, completed with a flowing chiffon train and matching jeweled arm cuffs.',
+    },
+    {
+      name: 'LOOK 15',
+      img: 'assets/looks2/Look-15-768x1152.jpg.webp',
+      text: 'A stunning silver creation, embroidered with crystals and sequins in an ornamental pattern, complemented by flowing fringe and a high neckline.',
+    },
+    {
+      name: 'LOOK 16',
+      img: 'assets/looks2/Look-16-600x900.jpg.webp',
+      text: 'A mesmerizing black gown inspired by the elegance of a black swan, featuring a feather-adorned bodice, a dramatic pleated mermaid skirt, and white gloves that echo timeless grace.',
+    },
+    {
+      name: 'LOOK 17',
+      img: 'assets/looks2/Look-17-600x900.jpg.webp',
+      text: 'Blending grace and glamour, this white gown features intricate beaded embroidery along the borders, a daring slit, and a sophisticated hooded accent.',
+    },
+    {
+      name: 'LOOK 18',
+      img: 'assets/looks2/Look-18-600x900.jpg.webp',
+      text: 'Flowing chiffon meets artisanal macramé in this captivating plum gown, designed with bold slits and sheer accents for the ultimate statement look.',
+    },
+    {
+      name: 'LOOK 19',
+      img: 'assets/looks2/Look-19-600x900.jpg.webp',
+      text: 'Elegant garnet-hued gown embellished with hand-applied sequins and beads, designed with a rushed silhouette and a thigh-high slit, paired with lightweight chiffon sleeve capes.',
+    },
+    {
+      name: 'LOOK 20',
+      img: 'assets/looks2/Look-20-600x900.jpg.webp',
+      text: 'Velvet-inspired plum jumpsuit with flowing sheer cape, enhanced by tonal beading and crystal accents',
+    },
+    {
+      name: 'LOOK 21',
+      img: 'assets/looks2/Look-21-600x900.jpg.webp',
+      text: 'Purple sheer gown with hand-stitched embellishments in flowing motifs, featuring a high slit and voluminous tulle cape sleeves.',
+    },
+    {
+      name: 'LOOK 22',
+      img: 'assets/looks2/Look-22-1-600x900.jpg.webp',
+      text: 'Fitted nude gown adorned with delicate beadwork and shimmering embroidery—paired with a detachable chiffon cape that creates a regal silhouette.',
+    },
+    {
+      name: 'LOOK 23',
+      img: 'assets/looks2/Look-23-1-600x900.jpg.webp',
+      text: 'Sheer pearl-embroidered gown with a high neckline and intricate beading throughout, paired with a delicate chiffon cape for an ethereal touch.',
+    },
+    {
+      name: 'LOOK 24',
+      img: 'assets/looks2/Look-24-1-600x900.jpg.webp',
+      text: 'Antique-inspired gold gown featuring intricate beadwork, a fitted silhouette, and captivating geometric patterns with bold cutout accents.',
+    },
+    {
+      name: 'LOOK 25',
+      img: 'assets/looks2/Look-25-1-600x900.jpg.webp',
+      text: 'With its rich black tulle, radiant crystal embroidery, and fluid cape, this gown is a stunning blend of elegance and daring, complete with a striking slit for added allure.',
+    },
+    {
+      name: 'LOOK 26',
+      img: 'assets/looks2/Look-26-1-600x900.jpg.webp',
+      text: 'Sunset-inspired gown in warm orange hues, intricately adorned with shimmering beadwork and crystals in geometric lines. Showcasing a dramatic cape in translucent tulle and a high choker neckline, this ethereal design exudes confidence and sophistication.',
+    },
   ];
 }
