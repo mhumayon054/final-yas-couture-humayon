@@ -32,8 +32,8 @@ export class SliderFour implements OnInit, OnDestroy {
       hoverUrl: 'assets/looks/Look-3.2-600x900.jpeg.webp',
     },
     {
-      defaultUrl: 'assets/looks2/Look 8.1.jpg',
-      hoverUrl: 'assets/looks2/Look 8.2.jpg',
+      defaultUrl: 'https://res.cloudinary.com/dzit141xn/image/upload/v1760867450/Look_8.1_w4ba9c.jpg',
+      hoverUrl: 'https://res.cloudinary.com/dzit141xn/image/upload/v1760867447/Look_8.2_y4nnqv.jpg',
     },
     {
       defaultUrl: 'assets/looks/Look-4.1-scaled.jpeg.webp',
