@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'MyCustomFont';
-  src: url('assets/LaureenZazaDisplay-Smdisplay.ttf') format('truetype');
+  font-family: 'DINNextArabicBold';
+  src: url('assets/ArbFONTS-DINNextLTArabic-Bold-2.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -22,4 +22,8 @@ html, body {
 
 .weglot-container {
   display: none !important;
+}
+
+body.arabic {
+  font-family: 'DINNextArabicBold', sans-serif;
 }
