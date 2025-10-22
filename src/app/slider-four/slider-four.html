@@ -1,22 +1,50 @@
-<h1 class="main-heading">THE LOOKS</h1>
+<!-- <h1 class="main-heading">THE LOOKS</h1>
 <div class="main">
   <div class="slider">
     <div class="slides" [style.transform]="calculateTransform()">
       <div class="slide" *ngFor="let img of filteredImages">
         <div class="image-wrapper">
-          <!-- Default image shown normally -->
           <img
             class="default-img"
             [src]="img.defaultUrl"
             alt="Slide Image"
             (click)="sendValue(img.defaultUrl)"
           />
-          <!-- Hover image shown on hover -->
           <img
             class="hover-img"
             [src]="img.hoverUrl"
             alt="Hover Image"
             (click)="sendValue(img.defaultUrl)"
+          />
+        </div>
+
+        <i class="ri-eye-line" (click)="buttonClicked(img.defaultUrl)"></i>
+      </div>
+    </div>
+
+    <button class="nav prev" (click)="moveSlide(-1)">←</button>
+    <button class="nav next" (click)="moveSlide(1)">→</button>
+  </div>
+</div> -->
+
+
+<h1 class="main-heading">THE LOOKS</h1>
+<div class="main">
+  <div class="slider">
+    <div class="slides" [style.transform]="calculateTransform()">
+      <div class="slide" *ngFor="let img of filteredImages">
+        <div class="image-wrapper">
+          <img
+            class="default-img"
+            [src]="img.defaultUrl"
+            [alt]="img.name || 'Slide Image'"
+            (click)="sendValueByIndex(img.index)"
+          />
+          <img
+            class="hover-img"
+            [src]="img.hoverUrl"
+            [alt]="img.name || 'Hover Image'"
+            (click)="sendValueByIndex(img.index)"
           />
         </div>
 

@@ -21,6 +21,7 @@ declare var Weglot: any;
   styleUrls: ['./main-page.scss'],
 })
 export class MainPage implements AfterViewInit, OnInit {
+  isBookAppointmentPage: boolean = false;
   @ViewChild('myVideo', { static: false }) myVideo!: ElementRef<HTMLVideoElement>;
   @Input() videoElement: string =
     "https://res.cloudinary.com/dzit141xn/video/upload/v1758726273/Teaser_1_FC_nzlxpd.mp4";
@@ -64,6 +65,9 @@ export class MainPage implements AfterViewInit, OnInit {
         this.currentRoute = event.urlAfterRedirects;
         // console.log("Current Route:", this.currentRoute);
       }
+    });
+  this.router.events.subscribe(() => {
+      this.isBookAppointmentPage = this.router.url.includes('BookAppointment');
     });
   }
 

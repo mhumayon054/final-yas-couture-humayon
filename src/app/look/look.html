@@ -1,9 +1,9 @@
+<!-- look.html
 <div class="main">
   <h1 class="main-heading">THE LOOKS</h1>
 
   <div class="containr">
-    <!-- Added hover image functionality with mouseenter/mouseleave events -->
-    <div class="product" *ngFor="let product of lookData">
+    <div class="product" *ngFor="let product of lookData; let i = index">
       <img
         #productImage
         [src]="product.img"
@@ -11,11 +11,37 @@
         (mouseenter)="productImage.src = product.img2 || product.img"
         (mouseleave)="productImage.src = product.img"
         (click)="showLookDetails({
-          allpictures: allPictures,
-          pictures: getImages(product),
+          img: product.img,
+          img2: product.img2,
           name: product.name,
           text: product.text || ''
-        })"
+        }, i)"
+      />
+      <div class="product-name">{{ product.name }}</div>
+    </div>
+  </div>
+</div> -->
+
+
+
+<!-- look.html -->
+<div class="main">
+  <h1 class="main-heading">THE LOOKS</h1>
+
+  <div class="containr">
+    <div class="product" *ngFor="let product of lookData; let i = index">
+      <img
+        #productImage
+        [src]="product.img"
+        [alt]="product.name"
+        (mouseenter)="productImage.src = product.img2 || product.img"
+        (mouseleave)="productImage.src = product.img"
+        (click)="showLookDetails({
+          img: product.img,
+          img2: product.img2,
+          name: product.name,
+          text: product.text || ''
+        }, i)"
       />
       <div class="product-name">{{ product.name }}</div>
     </div>
