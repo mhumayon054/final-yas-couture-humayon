@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 })
 export class PageThree {
   constructor(private route: Router) {}
+  
   images = [
     'https://res.cloudinary.com/dzit141xn/image/upload/v1758739502/Look-7.1-600x900.jpg_hmqdpk.webp',
     'https://res.cloudinary.com/dzit141xn/image/upload/v1758739504/Look-3.1-scaled_y8fh66.jpg',

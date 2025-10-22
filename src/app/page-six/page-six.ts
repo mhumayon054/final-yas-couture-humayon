@@ -15,7 +15,7 @@ export class PageSix {
       name: 'LOOK 1 ',
       img: 'assets/looks/Look-1.1-scaled.jpeg.webp',
       img2: 'assets/looks/Look-1.2-600x900.jpeg.webp',
-      text: 'A timeless scarlet masterpiece in textured tulle, featuring layers of ruffled tiers, a bold off-the shoulder cut, and a luxurious metallic accent at the waist….'
+      text: 'A timeless scarlet masterpiece in textured tulle, featuring layers of ruffled tiers, a bold off-the shoulder cut, and a luxurious metallic accent at the waist.'
     },
     {
       name: 'LOOK 2',

@@ -7,6 +7,7 @@
       autoplay
       loop
       playsinline
+      [volume]="0"
     ></video>
   </div>
   <div
@@ -141,47 +142,48 @@
         </div>
       </li>
       <li
-        (mouseenter)="run && ShowandHideDetails('list3', true)"
-        (click)="!run && onClickHandler('list3')"
-      >
-        IN THE SPOTLIGHT<i class="ri-arrow-down-s-line"></i>
-        <div class="IN-THE-SPOTLIGHT-dropdwon" *ngIf="showHover3&& !run">
-          <div class="product">
-            <div class="card1">
-              <img
-                (click)="moveNext('SpotLight')"
-                src="../../assets/image11.jpeg"
-                alt=""
-              />
-              <p style="font-weight: 700">DEBORAH COX</p>
-            </div>
-            <div class="card2">
-              <img
-                (click)="moveNext('SpotLight')"
-                src="../../assets/image18.jpeg"
-                alt=""
-              />
-              <p style="font-weight: 700">NORA FATEHI</p>
-            </div>
-            <div class="card3">
-              <img
-                (click)="moveNext('SpotLight')"
-                src="../../assets/spot3.jpeg"
-                alt=""
-              />
-              <p style="font-weight: 700">PARIS HILTON</p>
-            </div>
-            <div class="card4">
-              <img
-                src="../../assets/44.jpeg"
-                alt=""
-                (click)="moveNext('SpotLight')"
-              />
-              <p style="font-weight: 700">ASHANTI</p>
-            </div>
-          </div>
-        </div>
-      </li>
+  (mouseenter)="run && ShowandHideDetails('list3', true)"
+  (click)="onSpotLightClick()"
+>
+  IN THE SPOTLIGHT<i class="ri-arrow-down-s-line"></i>
+  <div class="IN-THE-SPOTLIGHT-dropdwon" *ngIf="showHover3 && !run">
+    <div class="product">
+      <div class="card1">
+        <img
+          (click)="moveNext('SpotLight')"
+          src="../../assets/image11.jpeg"
+          alt=""
+        />
+        <p style="font-weight: 700">DEBORAH COX</p>
+      </div>
+      <div class="card2">
+        <img
+          (click)="moveNext('SpotLight')"
+          src="../../assets/image18.jpeg"
+          alt=""
+        />
+        <p style="font-weight: 700">NORA FATEHI</p>
+      </div>
+      <div class="card3">
+        <img
+          (click)="moveNext('SpotLight')"
+          src="../../assets/spot3.jpeg"
+          alt=""
+        />
+        <p style="font-weight: 700">PARIS HILTON</p>
+      </div>
+      <div class="card4">
+        <img
+          src="../../assets/44.jpeg"
+          alt=""
+          (click)="moveNext('SpotLight')"
+        />
+        <p style="font-weight: 700">ASHANTI</p>
+      </div>
+    </div>
+  </div>
+</li>
+
       <li (click)="moveNext('BookAppointment')" style="cursor: pointer">
         BOOK AN APPOINTMENT
       </li>

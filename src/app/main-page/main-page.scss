@@ -326,7 +326,7 @@
 .COUTURE-Hover .collection-book-now-parent{
   display: flex;
   justify-content: space-between;
-  gap: 60px;
+  gap: 80px;
 }
 
 .COUTURE-Hover .collection {
@@ -342,9 +342,9 @@
 .COUTURE-Hover .collection h1 {
   font-size: 16px;
   font-weight: 500;
-  text-align: center;
-  margin: 20px;
-  font-weight: bold;
+      text-align: left;
+    margin: 20px 20px 20px 0;
+    font-weight: bold;
   // padding-right: 45px;
 }
 
@@ -360,10 +360,9 @@
 .COUTURE-Hover .booknow h1 {
   font-size: 16px;
   font-weight: bold;
-  text-align: center;
-  margin: 20px;
-  // padding-right: 45px;
-  margin: 20px 0px;
+      text-align: left;
+    margin: 20px 20px 20px 0;
+    font-weight: bold;
 }
 
 .COUTURE-Hover .booknow {
@@ -422,7 +421,7 @@
 .bride-Hover .collection-book-now-parent{
   display: flex;
   justify-content: space-between;
-  gap: 60px;
+  gap: 80px;
 }
 
 .bride-Hover .collection {
@@ -433,10 +432,9 @@
 
 .bride-Hover .collection h1 {
   font-size: 16px;
-  text-align: center;
-  margin: 20px;
-  // padding-right: 45px;
-  font-weight: bold;
+      text-align: left;
+    margin: 20px 20px 20px 0;
+    font-weight: bold;
 }
 
 .bride-Hover .collection p {
@@ -449,10 +447,9 @@
 .bride-Hover .booknow h1 {
   font-size: 16px;
   font-weight: bold;
-  text-align: center;
-  margin: 20px;
-  // padding-right: 45px;
-  margin: 20px 0px;
+      text-align: left;
+    margin: 20px 20px 20px 0;
+    font-weight: bold;
 }
 
 .bride-Hover .booknow {

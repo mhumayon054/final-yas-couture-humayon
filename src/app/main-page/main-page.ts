@@ -115,6 +115,12 @@ export class MainPage implements AfterViewInit, OnInit {
     }
   }
 
+  onSpotLightClick() {
+  if (this.run) {
+    this.moveNext('SpotLight');
+  }
+}
+
   // sidebars
   openSidebarOne() {
     this.sidebarOneOpen = true;
