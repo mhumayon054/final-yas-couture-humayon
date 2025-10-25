@@ -128,6 +128,11 @@
   font-weight: 400;
   padding: 40px 20px;
   margin-top: 50px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  padding: 20px;
+  }
 }
 
 /* Responsive styles */
@@ -152,7 +157,7 @@
     flex: 0 0 100%; // 1 slide on mobile
   }
   .slider {
-    height: 400px;
+           height: 553px;
   }
   .main-heading {
     font-size: 1.5rem;

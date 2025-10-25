@@ -34,6 +34,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 18px;
 }
 
 .partTwo-top .heading {
@@ -173,8 +174,7 @@
     font-size: 15px;
     color: #000;
     width: 70%;
-    padding: 5px 0;
-    padding-bottom: 40px;
+    padding: 18px 0 40px;
 }
 
 .pageFour-mid {
@@ -227,8 +227,7 @@
     font-size: 15px;
     color: #000;
     width: 70%;
-    padding: 5px 0;
-    padding-bottom:40px ;
+    padding: 18px 0 40px;
 }
 
 .partfive-bottom {
@@ -273,8 +272,7 @@
     font-size: 15px;
     color: #000;
     width: 70%;
-    padding: 5px 0;
-    padding-bottom: 40px;
+    padding: 18px 0 40px;
 }
 
 .partsix-bottom {
@@ -432,7 +430,7 @@
     }
 
     .partThree-bottom {
-        height: 380px;
+        height: 350px;
     }
 
     .partsix,
@@ -443,7 +441,7 @@
 
     .partfive-bottom,
     .partsix-bottom {
-        height: 413px;
+        height: 350px;
     }
 
     .partTwo p {

@@ -153,4 +153,11 @@
   font-size: 3rem;
   font-weight: 400;
   padding: 40px;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+  }
 }

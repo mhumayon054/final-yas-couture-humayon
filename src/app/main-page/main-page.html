@@ -49,6 +49,7 @@
       <i class="ri-close-fill" class="toggel-close"></i>
     </div>
     <ul
+    [class.rtl-menu]="selectedLanguage === 'ar'"
       (mouseleave)="run && ShowandHideDetails('list1', false)"
       (mouseleave)="run && ShowandHideDetails('list2', false)"
       (mouseleave)="run && ShowandHideDetails('list3', false)"
@@ -143,7 +144,7 @@
       </li>
       <li
   (mouseenter)="run && ShowandHideDetails('list3', true)"
-  (click)="onSpotLightClick()"
+  (click)="!run ? onClickHandler('list3') : moveNext('SpotLight')"
 >
   IN THE SPOTLIGHT<i class="ri-arrow-down-s-line"></i>
   <div class="IN-THE-SPOTLIGHT-dropdwon" *ngIf="showHover3 && !run">

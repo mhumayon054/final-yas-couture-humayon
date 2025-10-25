@@ -181,7 +181,7 @@
   z-index: 10;
 }
 .viewer-close {
-  font-size: 22px;
+  font-size: 32px;
   color: #ffffff;
   background: none;
   border: none;
@@ -233,6 +233,10 @@
   display: flex;
   gap: 16px;
   z-index: 3;
+
+  @media (max-width: 600px) {
+    gap: 8px;
+  }
 }
 .viewer-action {
   color: white;
@@ -295,12 +299,12 @@
     border-radius: 8px;
   }
   .viewer-actions {
-    right: 6px;
-    top: 4px;
+            right: 10px;
+        top: 6px;
   }
   .viewer-counter {
-    top: 4px;
-    left: 8px;
+            top: 12px;
+        left: 16px;
     font-size: 1.0rem;
   }
 }
@@ -318,4 +322,8 @@
   font-size: 16px;
   font-weight: 500;
   color: #fff;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 10px;
+  }
 }

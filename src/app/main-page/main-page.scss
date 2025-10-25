@@ -306,6 +306,11 @@
   font-size: 16px;
   margin: 12px 0px;
   font-weight: 400;
+
+  @media screen and (max-width: 767px) {
+    margin: 20px 0;
+    
+  }
 }
 // }
 .COUTURE-Hover {
@@ -540,6 +545,68 @@
   font-weight: bolder;
 }
 
+// Complete RTL support for entire menu
+.menu ul.rtl-menu {
+  direction: rtl;
+  
+  li {
+    // All arrows in RTL
+    i {
+      margin-left: 0 !important;
+      margin-right: 4px !important;
+    }
+    
+    // Text alignment
+    text-align: right;
+  }
+  
+  // Language dropdown specific RTL
+  .language-dropdown {
+    > span {
+      flex-direction: row-reverse;
+    }
+    
+    .flag-icon {
+      margin-right: 0;
+      margin-left: 6px;
+    }
+    
+    .dropdown-content {
+      left: auto;
+      right: 0;
+    }
+    
+    .dropdown-option {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+// Mobile RTL support for entire menu
+@media only screen and (max-width: 800px) {
+  .menu ul.rtl-menu {
+    li {
+      i {
+        right: auto !important;
+        left: 15px !important;
+      }
+    }
+  }
+}
+
+// Mobile Arabic support
+@media only screen and (max-width: 800px) {
+  .language-dropdown.rtl-active {
+    > span {
+      flex-direction: row-reverse !important;
+    }
+    
+    i {
+      right: auto !important;
+      left: 15px !important;
+    }
+  }
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -590,6 +657,8 @@
     padding: 20px 0px;
     gap: 80px;
     overflow-y: scroll;
+    position: fixed; 
+    z-index: 9999;
   }
 
   .menu.menu-open {
@@ -625,6 +694,16 @@
     position: relative;
   }
 
+  .menu ul li.language-dropdown {
+    .dropdown-content {
+      margin-right: 16px;
+    }
+    
+    &:has(.dropdown-content:not(.ng-hide)) {
+      padding-bottom: 64px;
+    }
+  }
+
   .menu ul li i {
     font-size: 20px;
     position: absolute;
@@ -646,6 +725,7 @@
     align-items: center;
     color: black;
     padding-top: 10px;
+    margin-top: 10px;
   }
 
   .couture-dropdown h1 {
@@ -664,7 +744,7 @@
   .couture-dropdown .product {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
   }
 
   .couture-dropdown .cardOne,
@@ -673,7 +753,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    // gap: 30px;
   }
 
   .couture-dropdown .product img {
@@ -689,6 +769,7 @@
     align-items: center;
     color: black;
     padding-top: 10px;
+    margin-top: 10px;
   }
 
   .bride-dropdown h1 {
@@ -707,7 +788,7 @@
   .bride-dropdown .product {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
   }
 
   .bride-dropdown .cardOne,
@@ -716,7 +797,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    // gap: 30px;
   }
 
   .bride-dropdown .product img {
@@ -732,6 +813,7 @@
     align-items: center;
     color: black;
     padding-top: 10px;
+    margin-top: 10px;
   }
 
   .IN-THE-SPOTLIGHT-dropdwon .product {
@@ -739,7 +821,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
     padding: 20px;
   }
 
@@ -750,7 +832,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    // gap: 20px;
   }
 
   .IN-THE-SPOTLIGHT-dropdwon .product img {

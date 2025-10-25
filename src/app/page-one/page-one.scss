@@ -114,7 +114,7 @@ h1{
   height: 100%;
   position: relative;
   display: flex;
-  align-items: center;
+      align-items: flex-end;
   justify-content: center;
 }
 
@@ -138,8 +138,12 @@ h1{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 50px 10px;
+    padding: 50px 0;
   gap: 10px;
+}
+
+.pageFour .pageFour-top{
+  padding: 0px 10px;
 }
 
 .pageFour .pageFour-top h1 {
@@ -417,6 +421,7 @@ h1{
   }
   .pageFive .pageFive-top .heading2{
     font-size: 36px;
+        margin: 18px 0;
   }
   .pageFive .pageFive-top .detail{
     padding: 0px 18px ;

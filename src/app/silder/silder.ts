@@ -88,11 +88,19 @@ export class Silder {
   }
 
   onDragStart(event: MouseEvent | TouchEvent) {
-    this.isDragging = true
+    // Pehle check karo agar vertical scroll ho raha hai to preventDefault na karo
     this.dragStartX = this.getPointerX(event)
     this.dragStartY = this.getPointerY(event)
+    
+    // Sirf horizontal drag ke liye hi preventDefault karo
+    if (Math.abs(this.dragStartX - this.getPointerX(event)) > 5) {
+      this.isDragging = true
+      event.preventDefault()
+    } else {
+      this.isDragging = false
+    }
+    
     this.dragDeltaX = 0
-    event.preventDefault()
   }
 
   onDragMove(event: MouseEvent | TouchEvent) {
@@ -104,10 +112,13 @@ export class Silder {
     const deltaX = currentX - this.dragStartX
     const deltaY = currentY - this.dragStartY
 
-    // Prevent vertical drag by ignoring if Y movement is dominant
-    if (Math.abs(deltaY) > Math.abs(deltaX)) return
-
-    this.dragDeltaX = deltaX
+    // Sirf horizontal movement significant ho to hi drag consider karo
+    if (Math.abs(deltaX) > 10 && Math.abs(deltaX) > Math.abs(deltaY)) {
+      this.dragDeltaX = deltaX
+    } else {
+      // Agar vertical movement zyada hai to drag cancel karo
+      this.isDragging = false
+    }
   }
 
   onDragEnd(event: MouseEvent | TouchEvent) {
@@ -138,5 +149,23 @@ export class Silder {
       return event.touches[0]?.clientY ?? event.changedTouches[0]?.clientY ?? 0
     }
     return event.clientY
+  }
+
+  // YEH NAYA METHOD ADD KARO - Touch events ko better handle karne ke liye
+  onTouchStart(event: TouchEvent) {
+    // Sirf single touch allow karo, multi-touch ko ignore karo
+    if (event.touches.length === 1) {
+      this.onDragStart(event)
+    }
+  }
+
+  onTouchMove(event: TouchEvent) {
+    if (event.touches.length === 1) {
+      this.onDragMove(event)
+    }
+  }
+
+  onTouchEnd(event: TouchEvent) {
+    this.onDragEnd(event)
   }
 }

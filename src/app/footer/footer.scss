@@ -110,6 +110,12 @@ body {
     align-items: flex-start;
     width: 100%;
     gap: 30px;
+
+    
+      @media screen and (max-width: 1023px) and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
 }
 
 .footer-section {
@@ -117,6 +123,14 @@ body {
   // margin: 18px;
       width: 100%;
       padding: 0 0 0 100px;
+
+      @media screen and (max-width: 1199px) and (min-width: 1024px) {
+        padding: 0 0 0 50px;
+      }
+      
+      @media screen and (max-width: 767px) {
+        padding: 0;
+      }
 }
 
 .logo-section p {
@@ -128,8 +142,14 @@ body {
   padding: 62px 0px 0px 60px;
     // margin: 0px 87px 0px 0px;
         width: 100%;
-}
 
+          @media screen and (max-width: 1199px) and (min-width: 1024px) {
+        padding: 62px 0px 0px 30px !important;
+}
+ @media screen and (max-width: 767px) {
+        padding: 0;
+      }
+}
 .footer-section h3 {
   font-size: 18px;
   letter-spacing: 2px;
