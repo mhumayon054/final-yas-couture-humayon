@@ -147,6 +147,11 @@
     background-color: #f5f5f5;
     gap: 10px;
     margin: 0;
+
+    @media screen and (max-width: 767px) {
+        padding: 60px 0 50px;
+        
+    }
 }
 
 .pageFour .pageFour-top {
@@ -415,7 +420,7 @@
 
 
     .pageFour .pageFour-top p {
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
     }
 
     .pageseven {
@@ -423,17 +428,16 @@
     }
 
     .partThree-bottom {
-        height: 380px;
-    }
-
-    .partThree-bottom {
-        height: 380px;
+        height: 350px;
     }
 
     .partsix,
     .partfive {
         gap: 0px;
 
+    }
+    .pageFour-mid{
+height: 350px;
     }
 
     .partfive-bottom,
