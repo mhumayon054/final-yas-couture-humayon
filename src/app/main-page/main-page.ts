@@ -23,8 +23,11 @@ declare var Weglot: any;
 export class MainPage implements AfterViewInit, OnInit {
   isBookAppointmentPage: boolean = false;
   @ViewChild('myVideo', { static: false }) myVideo!: ElementRef<HTMLVideoElement>;
-  @Input() videoElement: string =
-    "https://res.cloudinary.com/dzit141xn/video/upload/v1758726273/Teaser_1_FC_nzlxpd.mp4";
+  // @Input() videoElement: string =
+  //   "https://res.cloudinary.com/dzit141xn/video/upload/v1758726273/Teaser_1_FC_nzlxpd.mp4";
+
+  @Input() videoElement: string = '';
+    defaultVideo = 'https://ik.imagekit.io/ozrxwulka/FallWinterVideos/fw-hero.mp4?updatedAt=1758745273304';
 
   constructor(private router: Router) {}
 
@@ -87,6 +90,8 @@ export class MainPage implements AfterViewInit, OnInit {
       video.playsInline = true;
       video.load();
       video.play().catch(() => {});
+      const videoSrc = this.videoElement || this.defaultVideo;
+    this.myVideo.nativeElement.src = videoSrc;
     }
 
     // ✅ wait for Weglot to load properly

@@ -1,14 +1,9 @@
 <div class="hero">
   <div class="background" *ngIf="!currentRoute.includes('BookAppointment')">
-    <video
-      #myVideo
-      [src]="videoElement"
-      muted
-      autoplay
-      loop
-      playsinline
-      [volume]="0"
-    ></video>
+     <video #myVideo autoplay muted loop playsinline>
+    <source [src]="videoElement || defaultVideo" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
   </div>
   <div
     class="background black-bg"
