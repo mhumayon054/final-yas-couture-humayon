@@ -1,151 +1,7 @@
+/* ===================== MAIN CONTAINER ===================== */
 .main {
   width: 100%;
   height: 100%;
-}
-
-.containr {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  justify-content: space-around;
-  padding: 0 20px;
-  margin: 0 auto;
-  padding: 50px;
-  padding-top: 0;
-}
-
-@media (min-width: 601px) {
-  .containr {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 30px;
-  }
-}
-
-.product {
-  position: relative;
-  width: 98%;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  margin: 0 auto;
-}
-
-/* ============ IMAGE WRAPPER (same hover logic as slider) ============ */
-.product .image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.product .image-wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-/* Default image visible, hover image hidden initially */
-.product .default-img {
-  z-index: 1;
-  opacity: 1;
-}
-
-.product .hover-img {
-  z-index: 2;
-  opacity: 0;
-}
-
-/* Hover swap effect */
-.product:hover .default-img {
-  opacity: 0;
-}
-
-.product:hover .hover-img {
-  opacity: 1;
-}
-
-/* Scale effect on hover */
-.product:hover img {
-  transform: scale(1.05);
-}
-
-/* ============================================================= */
-
-.product img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  transition: transform 0.5s ease, opacity 0.5s ease-in-out;
-}
-
-/* Smooth fade animation when image src changes */
-.product img.ng-animating {
-  transition: opacity 0.5s ease-in-out;
-}
-
-.product img {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Product name overlay */
-.product-name {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.6s ease;
-  padding: 10px 0;
-}
-
-/* Show name on hover */
-.product:hover .product-name {
-  opacity: 1;
-  pointer-events: auto;
-  bottom: 20%;
-}
-
-/* Responsive Styles */
-@media (max-width: 900px) {
-  .product {
-    width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .containr {
-    gap: 16px;
-    padding: 0 4px;
-    grid-template-columns: 1fr;
-  }
-  .product {
-    width: 95vw;
-    max-width: 98vw;
-  }
-  .product-name {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 6px 0;
-  }
 }
 
 .main-heading {
@@ -159,5 +15,98 @@
   }
   @media screen and (max-width: 767px) {
     font-size: 32px;
+  }
+}
+
+/* ===================== GRID LAYOUT ===================== */
+.containr {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  justify-content: space-around;
+  padding: 0 20px;
+  margin: 0 auto;
+  padding: 50px;
+  padding-top: 0;
+}
+
+@media (max-width: 900px) {
+  .containr {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .containr {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 10px;
+  }
+}
+
+/* ===================== PRODUCT CARD ===================== */
+.product {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+  background-color: #000;
+}
+
+.product:hover {
+  transform: scale(1.02);
+}
+
+/* ===================== IMAGE WRAPPER ===================== */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 5; /* maintains consistent card shape */
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Default (front) image */
+.image-wrapper .default-img {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Hover (back) image */
+.image-wrapper .hover-img {
+  opacity: 0;
+  z-index: 2;
+}
+
+/* Hover fade + zoom */
+.product:hover .default-img {
+  opacity: 0;
+}
+
+.product:hover .hover-img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ===================== PRODUCT NAME ===================== */
+/* Product name overlay */ .product-name { position: absolute; bottom: 0; left: 50%; transform: translate(-50%, -50%); width: 80%; text-align: center; color: white; font-weight: bold; font-size: 18px; opacity: 0; pointer-events: none; transition: 0.6s ease; padding: 10px 0; } /* Show name on hover */ .product:hover .product-name { opacity: 1; pointer-events: auto; bottom: 20%; }
+
+/* ===================== RESPONSIVE STYLES ===================== */
+@media (max-width: 600px) {
+  .product-name {
+    font-size: 16px;
+    bottom: 15%;
   }
 }

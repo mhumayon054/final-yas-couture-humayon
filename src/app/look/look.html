@@ -28,22 +28,23 @@
 <div class="main">
   <h1 class="main-heading" style="font-family: 'MyCustomFont';">THE LOOKS</h1>
 
-  <div class="containr">
-    <div class="product" *ngFor="let product of lookData; let i = index">
-      <img
-        #productImage
-        [src]="product.img"
-        [alt]="product.name"
-        (mouseenter)="productImage.src = product.img2 || product.img"
-        (mouseleave)="productImage.src = product.img"
-        (click)="showLookDetails({
-          img: product.img,
-          img2: product.img2,
-          name: product.name,
-          text: product.text || ''
-        }, i)"
-      />
-      <div class="product-name">{{ product.name }}</div>
+ <div class="containr">
+  <div
+    class="product"
+    *ngFor="let product of lookData; let i = index"
+    (click)="showLookDetails({
+      img: product.img,
+      img2: product.img2,
+      name: product.name,
+      text: product.text || ''
+    }, i)"
+  >
+    <div class="image-wrapper">
+     <img class="default-img" [src]="product.img" loading="lazy" />
+<img *ngIf="product.img2" class="hover-img" [src]="product.img2" loading="lazy" />
+
     </div>
+    <div class="product-name">{{ product.name }}</div>
   </div>
+</div>
 </div>
