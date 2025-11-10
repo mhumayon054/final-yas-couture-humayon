@@ -37,7 +37,7 @@ export class Spotlight {
     { name: 'Paulina Rubio shines in a gold metallic crystal dress from Yas Couture', img: 'assets/Models/Poulina Robio.jpeg' },
     { name: 'Yuri stuns in a Yas Couture dress for the Latin Grammys', img: 'assets/Models/Yuri Stuns.jpeg' },
     { name: 'Ashanti shines in a Yas Couture dress at the Video Music Awards', img: 'assets/Models/Ashanti SHines.jpeg' },
-    { name: 'Pia Toscano stuns in a Yas Couture dress for the Polar Bear Affair event in Tronto', img: 'assets/Models/Peta Murghaizia.jpeg' },
+    // { name: 'Pia Toscano stuns in a Yas Couture dress for the Polar Bear Affair event in Tronto', img: 'assets/Models/Peta Murghaizia.jpeg' },
     { name: 'Vu Ngoc Anh stuns in a Yas Couture Gown as she attends Cannes Film Festival.', img: 'https://res.cloudinary.com/dzit141xn/image/upload/v1760864400/46_nsoafn.jpg' },
 { name: 'Vu Ngoc Anh stuns in a Yas Couture Gown as she attends Cannes Film Festival', img: 'https://res.cloudinary.com/dzit141xn/image/upload/v1760864518/47_ef6158.jpg' },
 { name: 'Jennifer Lopez graces the stage for the Robin Hood Foundation in New York wearing a Yas Couture costume', img: 'assets/Models/48.jpeg' },
