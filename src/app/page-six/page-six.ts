@@ -36,8 +36,8 @@ export class PageSix {
     },
     {
       name: 'LOOK 4',
-      img: 'assets/looks2/Look 8.1.jpg',
-      img2: 'assets/looks2/Look 8.2.jpg',
+      img: 'https://res.cloudinary.com/dzit141xn/image/upload/v1762903474/Look_8.1_akdrhn.jpg',
+      img2: 'https://res.cloudinary.com/dzit141xn/image/upload/v1762903473/Look_8.2_fsfq5d.jpg',
       text: 'An ivory crepe gown with crystal embellishments and delicate beading, designed with a structured crossover bodice, feather accents, and a high slit for effortless sophistication.'
     ,showSecondImage: true,
     },

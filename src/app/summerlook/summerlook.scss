@@ -92,7 +92,7 @@
 
 /* Hover fade + zoom */
 .product:hover .default-img {
-  opacity: 0;
+  // opacity: 0;
 }
 
 .product:hover .hover-img {
@@ -109,9 +109,8 @@
   width: 80%;
   text-align: center;
   color: white;
-  font-weight: bold;
   font-size: 18px;
-  opacity: 0;
+  // opacity: 0;
   pointer-events: none;
   transition: 0.6s ease;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
@@ -122,6 +121,8 @@
   opacity: 1;
   pointer-events: auto;
   bottom: 20%;
+  z-index: 3;
+  transition: 0.6s all ease;
 }
 
 /* ===================== RESPONSIVE STYLES ===================== */
