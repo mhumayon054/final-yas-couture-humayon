@@ -325,14 +325,28 @@
     justify-content: space-between;
   transition: all 0.3s;
   z-index: 9999;
-    padding: 20px 60px;
+    padding: 20px 40px 20px 60px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .COUTURE-Hover {
+        padding: 20px 0 20px 20px;
+  }
+  
 }
 
 .COUTURE-Hover .collection-book-now-parent{
   display: flex;
   justify-content: space-between;
   gap: 80px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .COUTURE-Hover .collection-book-now-parent {
+    gap: 35px;
+  }
+  
 }
 
 .COUTURE-Hover .collection {
@@ -359,8 +373,7 @@
     cursor: pointer;
     font-size: 14px;
     font-weight: 400;
-    text-align: center;
-
+        text-align: left;
 }
 
 .COUTURE-Hover .booknow h1 {
@@ -387,6 +400,13 @@
     padding: 20px;
     gap: 60px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .COUTURE-Hover .product {
+    gap: 35px;
+  }
+  
 }
 
 .COUTURE-Hover .product img {
@@ -424,10 +444,23 @@
       padding: 20px 60px;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .bride-Hover {
+        padding: 20px 0 20px 20px;
+  }
+  
+}
+
 .bride-Hover .collection-book-now-parent{
   display: flex;
   justify-content: space-between;
   gap: 80px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .bride-Hover .collection-book-now-parent {
+    gap: 35px;
+  }
 }
 
 .bride-Hover .collection {
@@ -446,7 +479,7 @@
 .bride-Hover .collection p {
   font-size: 14px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   margin: 8px 0px;
 }
 
@@ -475,6 +508,12 @@
   gap: 60px;
   margin-top: 10px;
 
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .bride-Hover .product {
+    gap: 35px;
+  }
 }
 
 .bride-Hover .product img {
