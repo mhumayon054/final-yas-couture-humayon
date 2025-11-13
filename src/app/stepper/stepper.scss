@@ -634,3 +634,8 @@ h1.heading {
 .book-appointment-hero-inner{
   height: 100%;
 }
+
+.book-appointment-hero-inner ::ng-deep .hero {
+  height: unset !important;
+  min-height: unset !important;
+}
