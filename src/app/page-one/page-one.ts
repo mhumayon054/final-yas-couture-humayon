@@ -6,9 +6,10 @@ import { Slidertwo } from "../slidertwo/slidertwo"
 import { SliderThree } from "../slider-three/slider-three"
 import { Router } from "@angular/router"
 import { SliderFour } from "../slider-four/slider-four"
+
 @Component({
   selector: "app-page-one",
-  imports: [MainPage, Silder, Footer, Slidertwo, SliderThree],
+  imports: [MainPage, Silder, Footer, SliderThree, Slidertwo],
   templateUrl: "./page-one.html",
   styleUrls: ["./page-one.scss"],
 })
@@ -200,7 +201,6 @@ export class PageOne {
   imageswinter = [ 'https://res.cloudinary.com/dzit141xn/image/upload/v1758735067/fallwinter5_rmesxj.webp', 
     'https://res.cloudinary.com/dzit141xn/image/upload/v1758733782/fallwinter3_kfb0ee.webp', 
     'https://res.cloudinary.com/dzit141xn/image/upload/v1758733779/fallwinter4_fsdty9.webp', 
-    // 'assets/newWinterLooksImages/Look 1.1.jpg', 
     'https://ik.imagekit.io/ozrxwulka/Look%202.1%20one.tif?updatedAt=1760955972371', 
     'https://res.cloudinary.com/dzit141xn/image/upload/v1758733809/Look_3.1_f6usaw.jpg', 
     'https://res.cloudinary.com/dzit141xn/image/upload/v1758733800/Look_4.1_cyclai.jpg', 
@@ -222,14 +222,15 @@ export class PageOne {
     'https://res.cloudinary.com/dzit141xn/image/upload/v1758733775/Look_24_u3iecq.jpg', 
     'https://res.cloudinary.com/dzit141xn/image/upload/v1758733778/Look_25_ypnyy6.jpg', 
     'https://res.cloudinary.com/dzit141xn/image/upload/v1758733799/Look_26_s20b8i.jpg', 
-  'https://res.cloudinary.com/dzit141xn/image/upload/v1758733788/Look_27_exa9vm.jpg', ];
+    'https://res.cloudinary.com/dzit141xn/image/upload/v1758733788/Look_27_exa9vm.jpg', 
+  ];
   images3 = [
-    // 'assets/3C8A1513-scaled-1-1.jpg (1).webp',
     "https://res.cloudinary.com/dzit141xn/image/upload/v1758737702/3C8A1469_rks4js.jpg",
     "https://res.cloudinary.com/dzit141xn/image/upload/v1758737704/3C8A1582_txslkf.jpg",
     "https://res.cloudinary.com/dzit141xn/image/upload/v1758737699/3C8A1513-scaled-1-1.jpg_abxyjv.webp",
     "https://res.cloudinary.com/dzit141xn/image/upload/v1758737705/3C8A1581_o2cews.jpg",
   ]
+
   moveNext(id: string) {
     this.route.navigate([id])
   }

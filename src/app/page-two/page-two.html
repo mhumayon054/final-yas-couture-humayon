@@ -36,8 +36,10 @@
                 essence, from intricate lace details to the infinite grace of flowing veils.
             </p>
         </div>
-        <div class="pageFour-mid">
-            <app-slidertwo slidertwo [images]="images2"></app-slidertwo>
+        <div class="pageFour-mid" style="max-width: 945px;">
+            <!-- <app-slidertwo slidertwo [images]="images2"></app-slidertwo> -->
+            <!-- Replaced app-slidertwo with app-details-slider for 7-slide display -->
+      <app-details-slider [images]="images2"></app-details-slider>
         </div>
     </div>
     <div class="pageseven">

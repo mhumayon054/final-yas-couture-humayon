@@ -1,0 +1,155 @@
+:host,
+.seven-slide-container {
+  width: 100%;
+  height: 100%;
+//   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  position: relative;
+//   max-width: 900px; 
+}
+
+/* Track */
+.seven-slide-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slide */
+.seven-slide {
+  position: absolute;
+  top: 0;
+  left: 50%;
+//   width: 90%;
+  height: 100%;
+  min-width: 180px;
+  max-width: 65%;
+  transform: translateX(-50%);
+  transition:
+    transform 0.48s cubic-bezier(.36, -0.14, .44, 1.18),
+    opacity 0.4s,
+    z-index 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Center Slide Image (exact same as slidertwo) */
+.seven-slide.center img {
+//   width: 100%;
+  height: auto;
+  max-height: 580px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* Side Slides (same brightness & overlay like slidertwo) */
+.seven-slide.side {
+  filter: brightness(0.7);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
+}
+
+.seven-slide.center {
+  z-index: 3;
+}
+
+/* Arrows (same as slidertwo) */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: #fff;
+  font-size: 40px;
+  width: 48px;
+  height: 64px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 0;    
+  z-index: 90;
+}
+
+.arrow:hover {
+  font-size: 50px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .seven-slide-track,
+  .seven-slide {
+    min-height: 500px;
+  }
+
+  .seven-slide.center img {
+    max-height: 450px;
+  }
+
+  .arrow {
+    width: 36px;
+    height: 48px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .seven-slide-track,
+  .seven-slide {
+    min-height: 400px;
+  }
+
+  .seven-slide {
+    width: 80%;
+  }
+
+  .seven-slide.center img {
+    max-height: 380px;
+  }
+
+  .arrow {
+    width: 28px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 400px) {
+  .seven-slide-track,
+  .seven-slide {
+    min-height: 350px;
+  }
+
+  .seven-slide.center img {
+    max-height: 320px;
+  }
+}

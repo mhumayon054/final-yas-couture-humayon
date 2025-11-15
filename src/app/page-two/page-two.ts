@@ -5,10 +5,11 @@ import { Silder } from '../silder/silder';
 import { Sidebartwo } from '../sidebartwo/sidebartwo';
 import { Slidertwo } from '../slidertwo/slidertwo';
 import { Router } from '@angular/router';
+import { DetailsSlider } from "../details-slider/details-slider"
 
 @Component({
   selector: 'app-page-two',
-  imports: [MainPage, Footer, Slidertwo],
+  imports: [MainPage, Footer, DetailsSlider, Slidertwo],
   templateUrl: './page-two.html',
   styleUrl: './page-two.scss',
 })
@@ -23,6 +24,10 @@ export class PageTwo {
   ];
   images2 = [
     'assets/j11.webp',
+    'https://ik.imagekit.io/ozrxwulka/3C8A1469%20(2).jpg?updatedAt=1758795423814',
+    'https://ik.imagekit.io/ozrxwulka/3C8A1513%20(3).jpg?updatedAt=1758792380383',
+    'assets/j14.webp',
+    
     'https://ik.imagekit.io/ozrxwulka/3C8A1469%20(2).jpg?updatedAt=1758795423814',
     'https://ik.imagekit.io/ozrxwulka/3C8A1513%20(3).jpg?updatedAt=1758792380383',
     'assets/j14.webp',
